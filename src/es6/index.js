@@ -101,5 +101,38 @@ let education = ['David', ...team1, ...team2];
 
 console.log(education);
 
+// La diferencia entre Var y Let
 
+{
+    var globalvar = "Global var";
+}
 
+{
+    let globalLet = 'Global Let';
+}
+
+console.log(globalvar);
+console.log(globalLet);
+
+// Notese la diferencia
+{
+    var globalvar = "Global var";
+}
+
+{
+    let globalLet = 'Global Let';
+    console.log(globalLet);
+}
+
+console.log(globalvar);
+
+// Constante
+//Aqui da error
+const nombre = 'Edwar';
+nombre = 'Carlos';
+console.log(nombre);
+
+// Aqui no da error
+var nombre = 'Edwar';
+nombre = 'Carlos';
+console.log(nombre);
